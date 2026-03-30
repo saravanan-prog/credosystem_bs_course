@@ -1,9 +1,19 @@
 # 🎯 Bootstrap Roadmap (Beginner → Advanced)
 
 ### 🟢 1. Basics (Foundation)
+
 - 📌 What is Bootstrap?
 - CSS framework for fast UI development
 - Mobile-first design
+- Boostrap colors
+-  Colors 
+    ```
+         → background colors => ( bg-<color-name> ), 
+         → Text colors       => ( text-<color-name> )
+    ```
+- bootstrap Typography
+- bootstrap container, container-fluid
+
 
 #### 👉 Learn:
 
@@ -12,10 +22,12 @@
 
 
 ### 🟡 2. Layout System (VERY IMPORTANT)
-- container, container-fluid
+
+
 - 📌 Grid System
 
 - row, col
+
  ```
         <div class="container">
             <div class="row">
@@ -35,33 +47,32 @@
 
 ```
 👉 Classes:
+    border -> border-0 border etc.,
     Margin  → m-3, mt-2
     Padding → p-4, px-2
-    Colors  → bg-primary, text-white
-    Display → d-flex, d-none
+    
 ```
 
-### 🟣 4. Components (Core UI)
-```
-    Must Learn Components: 
-        - Navbar
-        - Buttons
-        - Cards
-        - Forms
-        - Alerts
-        - Modals
-        - Tables
-```
-
-
-### 🟠 5. Flexbox Utilities
+### 🟠 4. Flexbox Utilities
 
 - 👉 Bootstrap uses flex internally
 
-- d-flex
-- justify-content-between
-- align-items-center
+  ```
+    d-flex
+    justify-content-between
+    align-items-center
+  ```
 
+
+### ⚪ 5. JavaScript Components
+
+```
+ 👉 Learn:
+        Modal
+        Carousel
+        Dropdown
+        Collapse
+```
 
 ### 🔴 6. Responsive Design
 
@@ -79,12 +90,17 @@
 - Input groups
 - Validation classes
 
-### ⚪ 8. JavaScript Components
 
+### 🟣 8. Components (Core UI)
 ```
- 👉 Learn:
-        Modal
-        Carousel
-        Dropdown
-        Collapse
+    Must Learn Components: 
+       
+        - Buttons
+        - Cards
+        - Forms
+        - Alerts
+        - Modals
+        - Tables
+        - Navbar
 ```
+
