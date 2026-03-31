@@ -13,7 +13,7 @@
 
 ### 🟡 2. Layout System (VERY IMPORTANT)
 
-- 📌 Grid System
+-  Grid System
 -  12 column system
 
 - Responsive breakpoints (sm, md, lg, xl)
