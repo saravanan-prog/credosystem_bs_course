@@ -1,70 +1,22 @@
 # 🎯 Bootstrap Roadmap (Beginner → Advanced)
 
 ### 🟢 1. Basics (Foundation)
-- 📌 What is Bootstrap?
-- CSS framework for fast UI development
+
+- Bootstrap Introduction
+- How to add Bootstrap (CDN)
 - Mobile-first design
+- BS colors (bg-colorname and text-colorname)
+- BS Typography
+- BS container and container-fluid
 
-#### 👉 Learn:
-
-   - How to add Bootstrap (CDN)
-   - Basic structure
 
 
 ### 🟡 2. Layout System (VERY IMPORTANT)
-- container, container-fluid
+
 - 📌 Grid System
+-  12 column system
 
-- row, col
- ```
-        <div class="container">
-            <div class="row">
-                <div class="col-6">Left</div>
-                <div class="col-6">Right</div>
-            </div>
-        </div>
-
-👉 Learn:
-
-    - 12 column system
-    - Responsive breakpoints (sm, md, lg, xl)
-    
-```
-
-### 🔵 3. Spacing & Utilities
-
-```
-👉 Classes:
-    Margin  → m-3, mt-2
-    Padding → p-4, px-2
-    Colors  → bg-primary, text-white
-    Display → d-flex, d-none
-```
-
-### 🟣 4. Components (Core UI)
-```
-    Must Learn Components: 
-        - Navbar
-        - Buttons
-        - Cards
-        - Forms
-        - Alerts
-        - Modals
-        - Tables
-```
-
-
-### 🟠 5. Flexbox Utilities
-
-- 👉 Bootstrap uses flex internally
-
-- d-flex
-- justify-content-between
-- align-items-center
-
-
-### 🔴 6. Responsive Design
-
+- Responsive breakpoints (sm, md, lg, xl)
 ```
     👉 Breakpoints:
         sm → small devices
@@ -74,12 +26,37 @@
 
 ```
 
-### ⚫ 7. Forms & Validation
-- Form controls
-- Input groups
-- Validation classes
 
-### ⚪ 8. JavaScript Components
+### 🔵 3. Spacing & Utilities
+
+```
+👉 Classes:
+    border -> border-0 border etc.,
+    Margin  → m-3, mt-2
+    Padding → p-4, px-2
+    
+```
+
+### 🟠 4. Flexbox Utilities
+- display properties
+    ```
+    d-none          <!-- display: none -->
+    d-block         <!-- display: block -->
+    d-inline        <!-- display: inline -->
+    d-inline-block  <!-- display: inline-block -->
+    d-flex          <!-- display: flex -->
+    d-inline-flex   <!-- display: inline-flex --> 
+
+    ```
+- 👉 Bootstrap uses flex internally
+  ```
+    d-flex
+    justify-content-between
+    align-items-center
+  ```
+
+
+### ⚪ 5. JavaScript Components
 
 ```
  👉 Learn:
@@ -88,3 +65,22 @@
         Dropdown
         Collapse
 ```
+
+### ⚫ 6. Forms & Validation
+- Form controls
+- Input groups
+- Validation classes
+
+
+### 🟣 7. Components (Core UI)
+```
+    Must Learn Components: 
+        - Buttons
+        - Cards
+        - Forms
+        - Alerts
+        - Modals
+        - Tables
+        - Navbar
+```
+
