@@ -2,46 +2,30 @@
 
 ### 🟢 1. Basics (Foundation)
 
-- 📌 What is Bootstrap?
-- CSS framework for fast UI development
+- Bootstrap Introduction
+- How to add Bootstrap (CDN)
 - Mobile-first design
-- Boostrap colors
--  Colors 
-    ```
-         → background colors => ( bg-<color-name> ), 
-         → Text colors       => ( text-<color-name> )
-    ```
-- bootstrap Typography
-- bootstrap container, container-fluid
+- BS colors (bg-colorname and text-colorname)
+- BS Typography
+- BS container and container-fluid
 
-
-#### 👉 Learn:
-
-   - How to add Bootstrap (CDN)
-   - Basic structure
 
 
 ### 🟡 2. Layout System (VERY IMPORTANT)
 
-
 - 📌 Grid System
+-  12 column system
 
-- row, col
-
- ```
-        <div class="container">
-            <div class="row">
-                <div class="col-6">Left</div>
-                <div class="col-6">Right</div>
-            </div>
-        </div>
-
-👉 Learn:
-
-    - 12 column system
-    - Responsive breakpoints (sm, md, lg, xl)
-    
+- Responsive breakpoints (sm, md, lg, xl)
 ```
+    👉 Breakpoints:
+        sm → small devices
+        md → tablets
+        lg → laptops
+        xl → large screens
+
+```
+
 
 ### 🔵 3. Spacing & Utilities
 
@@ -54,9 +38,17 @@
 ```
 
 ### 🟠 4. Flexbox Utilities
+- display properties
+    ```
+    d-none          <!-- display: none -->
+    d-block         <!-- display: block -->
+    d-inline        <!-- display: inline -->
+    d-inline-block  <!-- display: inline-block -->
+    d-flex          <!-- display: flex -->
+    d-inline-flex   <!-- display: inline-flex --> 
 
+    ```
 - 👉 Bootstrap uses flex internally
-
   ```
     d-flex
     justify-content-between
@@ -74,27 +66,15 @@
         Collapse
 ```
 
-### 🔴 6. Responsive Design
-
-```
-    👉 Breakpoints:
-        sm → small devices
-        md → tablets
-        lg → laptops
-        xl → large screens
-
-```
-
-### ⚫ 7. Forms & Validation
+### ⚫ 6. Forms & Validation
 - Form controls
 - Input groups
 - Validation classes
 
 
-### 🟣 8. Components (Core UI)
+### 🟣 7. Components (Core UI)
 ```
     Must Learn Components: 
-       
         - Buttons
         - Cards
         - Forms
