@@ -26,9 +26,7 @@
   const forms = document.querySelectorAll('.needs-validation');
 
   forms.forEach(form => {
-    console.log("form=====>",form.checkValidity())
     form.addEventListener('submit', event => {
-        console.log("event=====>",event)
       if (!form.checkValidity()) {
         console.log("True block enterd")
         event.preventDefault();
