@@ -6,36 +6,69 @@
 </head>
 
 <body>
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
 
-    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup"> Open popup </button>
-    
-     <div class="modal fade" id="popup">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p>My Modal</p>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Hello Saravanan !!!! </p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-danger" data-bs-dismiss="modal" >close</button>
-                </div>
-            </div>
-        </div>
-     </div>
+    <!-- THREE DOTS -->
+    <div class="carousel-indicators">
 
+        <button type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="0"
+                class="active">
+        </button>
 
-    <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> product</button>
+        <button type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="1">
+        </button>
 
-        <ul class="dropdown-menu">
-            <li>Apple</li>
-              <li>orange</li>
-        </ul>
+        <button type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="2">
+        </button>
+
     </div>
 
+
+    <!-- SLIDES -->
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="./Images/ajith1.jpg" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item">
+            <img src="./Images/ajith2.jpg" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item">
+            <img src="./Images/collegeLogo.jpg" class="d-block w-100">
+        </div>
+
+    </div>
+
+     <!-- Previous Button -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+
+        <!-- Next Button -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+</div>
     
 
 
