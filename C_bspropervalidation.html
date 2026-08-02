@@ -20,7 +20,7 @@
     <form class="needs-validation" novalidate>
 
       <div class="mb-3">
-        <label>Email</label>
+        <label class="form-label">Email</label>
         <input type="email" class="form-control" required>
         <div class="invalid-feedback">
           Please enter a valid email.
@@ -29,7 +29,7 @@
 
       <div>
         <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" required minLength="3" maxlength="5">
+        <input type="password" class="form-control" required minlength="3" maxlength="8">
         <div class="invalid-feedback">
           Please provide your password.
         </div>
@@ -41,13 +41,7 @@
   </div>
 
 
-  <div>
-    <gmp-map
-            center="12.984613,80.216222"
-            zoom="10"
-            map-id="DEMO_MAP_ID"
-            style="height: 500px"></gmp-map>
-  </div>
+
 
 
 
@@ -56,14 +50,13 @@
     (() => {
       'use strict';
       const forms = document.querySelectorAll('.needs-validation');
-
       forms.forEach(form => {
         form.addEventListener('submit', event => {
+           event.preventDefault();
           if (!form.checkValidity()) {
-            event.preventDefault();
             event.stopPropagation();
           }
-          event.preventDefault();
+      
           form.classList.add('was-validated');
         });
       });
