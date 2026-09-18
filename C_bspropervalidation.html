@@ -19,7 +19,7 @@
 
     <form class="needs-validation" novalidate>
 
-      <div class="mb-3 form-floating">
+      <div class="mb-3">
         <label class="form-label">Email</label>
         <input type="email" class="form-control" required>
 
@@ -28,7 +28,7 @@
         </div>
       </div>
 
-      <div class=" form-floating">
+      <div class="mt-3">
         <label class="form-label ">Password</label>
         <input type="password" class="form-control" required minlength="3" maxlength="8">
         <div class="invalid-feedback">
@@ -51,13 +51,15 @@
   <script>
 
     (() => { 
-      console.log("Function called....")
+
+      console.log("validation function calling.....")
+
       'use strict';
       const forms = document.querySelectorAll('.needs-validation');
       forms.forEach(element => {
-        element.addEventListener('submit', event => { 
-          console.log("Event called")
+        element.addEventListener('submit', event => {  
           event.preventDefault();          // stop refresh
+
           if (element.checkValidity() == false) {
             event.stopPropagation();
           }
