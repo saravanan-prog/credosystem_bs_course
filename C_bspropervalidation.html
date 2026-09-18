@@ -17,27 +17,30 @@
   <div class="container">
     <div class="text-primary fs-4  text-center m-3 p-3">Form Validations</div>
 
-    <form class="needs-validation" novalidate >
+    <form class="needs-validation" novalidate>
 
-      <div class="mb-3">
+      <div class="mb-3 form-floating">
         <label class="form-label">Email</label>
         <input type="email" class="form-control" required>
+
         <div class="invalid-feedback">
-          Please enter a valid email.
+            Please enter a valid email.
         </div>
       </div>
 
-      <div>
-        <label for="password" class="form-label">Password</label>
+      <div class=" form-floating">
+        <label class="form-label ">Password</label>
         <input type="password" class="form-control" required minlength="3" maxlength="8">
         <div class="invalid-feedback">
-          Please provide your password.
+            Please provide your password.
         </div>
       </div>
 
       <button class="btn btn-primary mt-3">Submit</button>
 
     </form>
+
+
   </div>
 
 
@@ -47,18 +50,22 @@
 
   <script>
 
-    (() => {
-     'use strict';
+    (() => { 
+      console.log("Function called....")
+      'use strict';
       const forms = document.querySelectorAll('.needs-validation');
       forms.forEach(element => {
-        element.addEventListener('submit', event => {
-            event.preventDefault();          // stop refresh
-            if (element.checkValidity() == false) {
-              event.stopPropagation(); 
-            }
-            element.classList.add('was-validated');
-          });
+        element.addEventListener('submit', event => { 
+          console.log("Event called")
+          event.preventDefault();          // stop refresh
+          if (element.checkValidity() == false) {
+            event.stopPropagation();
+          }
+          element.classList.add('was-validated');
+          
+          
         });
+      });
     })();
 
   </script>
