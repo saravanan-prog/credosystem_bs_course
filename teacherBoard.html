@@ -6,58 +6,40 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
-    <!--carousel-->
 
-    <div
-      id="my-carousel"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-interval="500"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item">
-          <div class="w-100">
-            <img
-              src="./Assets/Images/ajith1.jpg"
-              alt="ajith"
-              class="d-block w-100 h-75"
-            />
+      <button
+        class ="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target ="#my-modal"
+
+      >Open Modal </button>
+
+      <div class="modal" id="my-modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="h3">Modal Component</div>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                 <p> Hello Welcome to Bootstra world </p>
+              </div>
+              <div class="modal-footer">
+                 <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="./Assets/Images/ajith2.jpg"
-            alt="ajith"
-            class="d-block w-100  h-75"
-          />
-        </div>
-        <div class="carousel-item active">
-          <img
-            src="./Assets/Images/collegeLogo.jpg"
-            alt="ajith"
-            class="d-block w-100  h-75"
-          />
-        </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        data-bs-target="#my-carousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
-      </button>
 
-      <button
-        class="carousel-control-next"
-        data-bs-target="#my-carousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+    
+    <!--BS JS CDN configuration-->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" ></script>
   </body>
 </html>
