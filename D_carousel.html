@@ -1,59 +1,43 @@
 <html>
-  <head>
-    <title>Bootstrap carausel</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-   
-  </head>
 
-  <body>
-    <!-- carousel start -->
+<head>
+  <title>Bootstrap Toggle</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
 
-    <div
-      id="myCarousel"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-interval="2000"
-    >
-      <div class="carousel-inner">
-        <!-- First Slide -->
-        <div class="carousel-item active">
-          <img src="./asserts/Images/ajith1.jpg" class="d-block w-100" />
+<body>
+  <div class="border border-primary bg-danger text-white">
+
+    <div id="first-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active py-5">
+          <h3 class="mb-0"> Today Breakfast Specail Mysore Masala Dosail</h3>
+        </div>
+        <div class="carousel-item py-5">
+          <h3 class="mb-0"> Today Lunch Specail Hyderabhad Mutton biryani</h3>
         </div>
 
-        <!-- Second Slide -->
-        <div class="carousel-item">
-          <img src="./asserts/Images/ajith2.jpg" class="d-block w-100" />
+        <div class="carousel-item py-5">
+          <h3 class="mb-0"> Today Snaks Special Ghee Cashew Mysore cake</h3>
         </div>
-        <!-- Third Slide -->
-        <div class="carousel-item">
-          <img src="./asserts/Images/collegeLogo.jpg" class="d-block w-100" />
+        <div class="carousel-item py-5">
+          <h3 class="mb-0"> Today dinner special Sole poori</h3>
         </div>
       </div>
 
-      <!-- Previous Button -->
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
+      <button class="carousel-control-prev" type="button" data-bs-target="#first-carousel" data-bs-slide="prev" aria-label="Previous slide">
+          <span class="carousel-control-prev-icon"></span>
       </button>
-
-      <!-- Next Button -->
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
+      <button class="carousel-control-next" type="button" data-bs-target="#first-carousel" data-bs-slide="next" aria-label="Next slide">
+          <span class="carousel-control-next-icon"></span>
       </button>
     </div>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+
+
+
+    <!--BS JS CDN configuration-->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
