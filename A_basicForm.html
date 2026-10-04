@@ -14,75 +14,74 @@
         BootStrap Form
     </div>
 
-    <div class="container">
-        <form>
-            <!--input box -->
-            <div>
-                <label class="form-label">Canidate Name</label>
-                <input type="text" class="form-control">
-            </div>
-            <!--input box -->
-            <div>
-                <label class="form-label">Canidate Last Name</label>
-                <input type="text" class="form-control">
-            </div>
-
-            <div>
-                <label for="password" class="form-label">Passowrd</label>
-                <input type="password" class="form-control" id="password">
-            </div>
-
-            <!--checkbox or Radio button-->
-            <div>
-                <label class="form-label">Gender</label>
-
-                <div class="ms-3 form-check form-check-inline">
-                    <input type="radio" class="form-check-input" id="male" name="gender">
-                    <label for="male" class="form-check-label">Male</label>
+    <div class="container card  mt-5">
+        <div class="card-body m-3">
+            <form>
+                <!--input box -->
+                <div >
+                    <label class="form-label" for="canidate-name">Canidate Name</label>
+                    <input type="text" class="form-control" name="canidadate-name" id="canidate-name">
                 </div>
-                
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="gender" id="female">
-                    <label for="female" class="form-check-label">Female</label>
+                <!--input box -->
+                <div>
+                    <label class="form-label" for="last-name">Canidate Last Name</label>
+                    <input type="text" class="form-control" id="last-name" name="canidate-lastname">
                 </div>
 
-            </div>
-
-            <div>
-                <label for="" class="form-label">Languages</label>
-
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" class="form-check-input">
-                    <lable class="form-check-label">Tamil</lable>
+                <div>
+                    <label for="password" class="form-label">Passowrd</label>
+                    <input type="password" class="form-control" id="password" name="canidate-password">
                 </div>
 
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" class="form-check-input">
-                    <lable class="form-check-label">English</lable>
+                <!--checkbox or Radio button-->
+                <div>
+                    <label class="form-label" for="male">Gender</label>
+
+                    <div class="ms-3 form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="male" name="gender">
+                        <label for="male" class="form-check-label">Male</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="gender" id="female">
+                        <label for="female" class="form-check-label">Female</label>
+                    </div>
+
                 </div>
 
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" class="form-check-input">
-                    <lable class="form-check-label">Malayalam</lable>
+                <div>
+                    <label for="" class="form-label">Languages</label>
+
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="lang[]" id="tamil">
+                        <lable class="form-check-label" for="tamil">Tamil</lable>
+                    </div>
+
+                    <div class="form-check form-check-inline" name="lang[]">
+                        <input type="checkbox" class="form-check-input" name="lang[]" id="english">
+                        <lable class="form-check-label" for="english">English</lable>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="malayalam" name="lang[]">
+                        <lable class="form-check-label" for="malayalam">Malayalam</lable>
+                    </div>
                 </div>
-            </div>
 
-            <div>
-                <label for="" class="form-label">Choose your country</label>
-                <select class="form-select">
-                    <option value="india">India</option>
-                    <option value="china">China</option>
-                     <option value="singapore">Singapore</option>
-                </select>
-            </div>
+                <div>
+                    <label for="country" class="form-label">Choose your country</label>
+                    <select class="form-select" id="country" name="country">
+                        <option value="india">India</option>
+                        <option value="china">China</option>
+                        <option value="singapore">Singapore</option>
+                    </select>
+                </div>
 
-            <div>
-                <button class="btn btn-primary mt-3" type="submit">Submit</button>
-            </div>
-
-           
-    </form>
-
+                <div>
+                    <button class="btn btn-primary mt-3" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
